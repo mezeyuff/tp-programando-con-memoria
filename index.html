@@ -32,7 +32,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#testimonios">Testimonios</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#tarjeta">Tarjeta</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tarjeta">Tarjeta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#adhesion">Adhesión</a>
                         </li>
                     </ul>
                 </div>
@@ -88,12 +92,12 @@
     <h2>Archivo de testimonios</h2>
     <label for="buscador" class="form-label">Buscar en el archivo:</label>
     <input type="search" id="buscador" class="form-control mb-4" placeholder="Escribí un nombre o una palabra...">
-    <div class="row g-4" id="lista-testimonios">
+    <div class="row g-4" id="lista-testimonios"></div>
         <div class="col-md-6 testimonio">
             <div class="card h-100">
                 <div class="card-body">
             <h3 class="h5 card-title">Norberto Liwski</h3>
-            <p class="card-subtittle mb-2 text-muted">Médico pediatra social y referente de Derechos Humanos.</p>
+            <p class="card-subtitle mb-2 text-muted">Médico pediatra social y referente de Derechos Humanos.</p>
             <blockquote class="card-text">
             <p> "Me llevaron directamente a una mesa de tortura. La primera voz que se dirigió a mí era de un 'colega' [médico militar] que me dijo: 'No se resista, está con heridas importantes, perdiendo mucha sangre. Es mejor que colabore'. Estando tirado en el piso de un Ford Falcon baleado en las piernas, supe el destino del horror al que me trasladaban."</p>
             </blockquote>
@@ -105,11 +109,11 @@
             <div class="card h-100">
                 <div class="card-body">
             <h3 class="h5 card-title">Delia Bisutti</h3>
-            <p class="card-subtittle mb-2 text-muted">Docente, trabajadora ferroviaria y sobreviviente del Centro Clandestino de Detención (CCD) "Puente 12".</p>
+            <p class="card-subtitle mb-2 text-muted">Docente, trabajadora ferroviaria y sobreviviente del Centro Clandestino de Detención (CCD) "Sheraton".</p>
             <blockquote class="card-text">
             <p> "Salía de la pileta con amigos y me 'levantaron' en plena avenida Rivadavia. Me vendaron, pero por una abertura pude ver características que me permitieron reconocer el lugar. Todos mis compañeros de la boletería del Ferrocarril Belgrano Sur están desaparecidos [...]. Todo era terror, miedo y silencio."</p>
             </blockquote>
-            <p class="small mb-0">Testimonio judicial en el Juicio por los crímenes cometidos en el Centro Clandestino Puente 12 (Tribunal Oral en lo Criminal Federal N.º 6 de la Capital Federal).</p>
+            <p class="small mb-0">Testimonio judicial en la Causa por los crímenes cometidos en el Centro Clandestino Sheraton / Área 114 (Tribunal Oral en lo Criminal Federal N.º 1 de La Plata).</p>
                 </div>
             </div>
         </div>
@@ -117,7 +121,7 @@
         <div class="card h-100">
             <div class="card-body">
             <h3 class="h5 card-title">Mario Villani</h3>
-            <p class="card-subtittle mb-2 text-muted">Físico y docente universitario. Sobrevivió a 5 centros clandestinos de detención distintos entre 1977 y 1981 (Club Atlético, El Banco, Olimpo, ESMA y Campo de Mayo).</p>
+            <p class="card-subtitle mb-2 text-muted">Físico y docente universitario. Sobrevivió a 5 centros clandestinos de detención distintos entre 1977 y 1981 (Club Atlético, El Banco, Olimpo, ESMA y Campo de Mayo).</p>
             <blockquote class="card-text">
             <p> "Permanecer con vida no dependía de nuestras acciones, sino de una decisión ajena y arbitraria del aparato represivo. La lucha cotidiana dentro del campo era mantener la condición humana intacta frente a la deshumanización planificada a la que nos sometían a diario."</p>
             </blockquote>
@@ -129,11 +133,11 @@
         <div class="card h-100">
             <div class="card-body">
             <h3 class="h5 card-title">Fernando Álvarez Rojas</h3>
-            <p class="card-subtittle mb-2 text-muted">Trabajador del Instituto Nacional de Tecnología Industrial (INTI).</p>
+            <p class="card-subtitle mb-2 text-muted">Investigador del INTI y CONICET, desaparecido en octubre de 1976 (Testimonio de sus compañeros de trabajo).</p>
             <blockquote class="card-text">
             <p> "Él tenía una beca para ir a la comisión de energía atómica en Canadá y estuve tratando de convencerlo para que se fueran. Él me decía que no iba a pasar nada, pero pasó [...]. Nos encontramos de un día para otro con las puertas enrejadas y el control militar dentro del instituto."</p>
             </blockquote>
-            <p class="small mb-0">Archivo de la Memoria y los Derechos Humanos del INTI / Registro del Ministerio de Desarrollo Productivo de la Nación.</p>
+            <p class="small mb-0">Registro del Archivo de la Memoria y los Derechos Humanos del INTI / Legajo RUVTE-CONICET N.º 3038.</p>
             </div>
         </div>
     </div>
@@ -156,8 +160,35 @@
     </form>
     <div id="resultado-tarjeta" class="mt-4"></div>
 </section>
+<section id="adhesion" class="container py-5">
+    <h2>Formulario de adhesión</h2>
+    <p>Sumate a la memoria: dejá tus datos y firmá el compromiso.</p>
+    <form id="form-adhesion" class="row g-3" novalidate>
+        <div class="col-md-6">
+            <label for="nombre-adhesion" class="form-label">Nombre y apellido:</label>
+            <input type="text" id="nombre-adhesion" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="correo-adhesion" class="form-label">Correo electrónico:</label>
+            <input type="email" id="correo-adhesion" class="form-control">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input type="checkbox" id="compromiso-adhesion" class="form-check-input">
+                <label for="compromiso-adhesion" class="form-check-label">Me comprometo a difundir y cuidar la memoria.</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-memoria">Adherir</button>
+        </div>
+    </form>
+    <div id="mensaje-adhesion" class="mt-3"></div>
+</section>
 </main>
-<footer>Nunca Más</footer>
+<footer class="footer-memoria text-center py-4">
+    <p class="mb-1">Nunca Más</p>
+    <p class="small mb-0">Memoria, Verdad y Justicia · Lenguajes Informáticos 1 · UNAHUR 2026</p>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>  
 </body>
