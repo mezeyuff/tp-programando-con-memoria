@@ -1,0 +1,21 @@
+:root {
+    --celeste: #74acdf;
+    --celeste-oscuro: #1f4e79;
+    --celeste-claro: #e8f1fa;
+    --blanco: #ffffff;
+    --sol: #f6b40e;
+    --texto: #1b2a3a;
+    --fuente-titulo: "Playfair Display", serif;
+    --fuente-texto: "Lora", serif;
+    --fuente-archivo: "Special Elite", monospace;
+}
+body { color: var(--texto); }
+.navbar-memoria { background-color: var(--celeste-oscuro); border-bottom: 4px solid var(--sol);--bs-navbar-color: #fff;
+--bs-navbar-hover-color: var(--sol);}
+.hero { background-color: var(--celeste); }
+body { font-family: var(--fuente-texto); }
+h1, h2, h3, .navbar-brand { font-family: var(--fuente-titulo); }
+.fecha { font-family: var(--fuente-archivo); }
+.linea { border-left: 4px solid var(--celeste); padding-left: 1.5rem; }
+.linea li { margin-bottom: 2rem; }
+.fecha { font-family: var(--fuente-archivo); color: var(--celeste-oscuro); }

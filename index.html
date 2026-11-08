@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria Activa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Playfair+Display:wght@700;900&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-memoria">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Memoria Activa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                   <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#linea-tiempo">Línea de Tiempo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section id="inicio" class="hero text-center py-5">
+    <h1>50 años. Memoria, Verdad y Justicia.</h1>
+    <p>Van <span id="contador"></span> años de Memoria, Verdad y Justicia.</p>
+    </section>
+    <section id="linea-tiempo" class="container py-5">
+    <h2>Línea de tiempo</h2>
+    <ol class="linea list-unstyled">
+        <li>
+            <time class="fecha" datetime="1976-03-24">24 de marzo de 1976</time>
+            <h3>Golpe de Estado</h3>
+            <p>Una junta militar integrada por Jorge Rafael Videla, Emilio Eduardo Massera y Orlando Ramón Agosti consumó un golpe de Estado que destituyó a la presidenta constitucional María Estela Martínez de Perón, dando inicio a la última dictadura civil-militar en el país.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="1977-04-30">30 de abril de 1977</time>
+            <h3>Nacimiento de las Madres de Plaza de Mayo</h3>
+            <p> Frente a la falta de respuestas oficiales, catorce mujeres se congregaron por primera vez en la Plaza de Mayo para visibilizar el reclamo por sus hijos secuestrados, fundando así el movimiento de las Madres de Plaza de Mayo.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="1983-12-10">10 de diciembre de 1983</time>
+            <h3>Retorno a la democracia</h3>
+            <p>Tras la caída del régimen militar, Raúl Alfonsín asumió la presidencia de la Nación de manera formal, marcando el fin de los años de plomo y el retorno definitivo de la vida democrática a la Argentina.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="1985-12-09">9 de diciembre de 1985</time>
+            <h3>Sentencia de juicio a las juntas</h3>
+            <p>La Cámara Nacional de Apelaciones en lo Criminal y Correccional Federal dictó la histórica sentencia del Juicio a las Juntas, condenando a cinco de los máximos jerarcas del régimen, entre ellos a Videla y Massera a prisión perpetua.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="1986-12-24">24 de diciembre de 1986</time>
+            <h3>Ley de Punto Final</h3>
+            <p>Se promulgó formalmente la Ley de Punto Final (N.° 23.492), la cual impuso un límite temporal de sesenta días para procesar penalmente a los involucrados en delitos de lesa humanidad, paralizando una gran cantidad de causas judiciales.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="1987-06-04">4 de junio de 1987</time>
+            <h3>Ley de Obediencia Debida</h3>
+            <p>El Poder Legislativo sancionó la Ley de Obediencia Debida (N.° 23.521), una normativa que eximió de responsabilidades a la mayoría de los cuadros intermedios y subalternos de las fuerzas de seguridad bajo la premisa de que actuaban siguiendo órdenes directas de sus superiores.</p>
+        </li>
+        <li>
+            <time class="fecha" datetime="2003-09-02">2 de septiembre de 2003</time>
+            <h3>Nulidad de las leyes de impunidad</h3>
+            <p>Tras recibir luz verde por parte del Congreso de la Nación semanas atrás, el presidente Néstor Kirchner promulgó la Ley N.° 25.779, declarando la nulidad absoluta e insanable de las leyes de Punto Final y Obediencia Debida, lo que permitió reabrir los juicios contra los represores.</p>
+        </li>
+    </ol>
+</section>
+<section id="testimonios" class="container py-5">
+    <h2>Archivo de testimonios</h2>
+    <label for="buscador" class="form-label">Buscar en el archivo:</label>
+    <input type="search" id="buscador" class="form-control mb-4" placeholder="Escribí un nombre o una palabra...">
+    <div class="row g-4" id="lista-testimonios">
+        <div class="col-md-6 testimonio">
+            <div class="card h-100">
+                <div class="card-body">
+            <h3 class="h5 card-title">Norberto Liwski</h3>
+            <p class="card-text">Médico pediatra social y referente de Derechos Humanos.</p>
+            <p class="card-text">"Me llevaron directamente a una mesa de tortura. La primera voz que se dirigió a mí era de un 'colega' [médico militar] que me dijo: 'No se resista, está con heridas importantes, perdiendo mucha sangre. Es mejor que colabore'. Estando tirado en el piso de un Ford Falcon baleado en las piernas, supe el destino del horror al que me trasladaban."</p>
+            <p class="small mb-0">Juicio a las Juntas Militares (1985), Legajo CONADEP N.º 4349; ratificado en el informe de Memoria, Verdad y Justicia (Archivo Nacional de la Memoria).</p>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-6 testimonio">
+        <div class="card h-100">
+            <div class="card-body">
+            <h3 class="h5 card-title">Delia Bisutti</h3>
+            <p class="card-text">Docente, trabajadora ferroviaria y sobreviviente del Centro Clandestino de Detención (CCD) "Puente 12".</p>
+            <p class="card-text">"Salía de la pileta con amigos y me 'levantaron' en plena avenida Rivadavia. Me vendaron, pero por una abertura pude ver características que me permitieron reconocer el lugar. Todos mis compañeros de la boletería del Ferrocarril Belgrano Sur están desaparecidos [...]. Todo era terror, miedo y silencio."</p>
+            <p class="small mb-0">Testimonio judicial en el Juicio por los crímenes cometidos en el Centro Clandestino Puente 12 (Tribunal Oral en lo Criminal Federal N.º 6 de la Capital Federal).</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 testimonio">
+        <div class="card h-100">
+            <div class="card-body">
+            <h3 class="h5 card-title">Mario Villani</h3>
+            <p class="card-text">Físico y docente universitario. Sobrevivió a 5 centros clandestinos de detención distintos entre 1977 y 1981 (Club Atlético, El Banco, Olimpo, ESMA y Campo de Mayo).</p>
+            <p class="card-text">"Permanecer con vida no dependía de nuestras acciones, sino de una decisión ajena y arbitraria del aparato represivo. La lucha cotidiana dentro del campo era mantener la condición humana intacta frente a la deshumanización planificada a la que nos sometían a diario."</p>
+            <p class="small mb-0">Libros de testimonios Desaparecido: Memorias de un cautiverio (Villani & Reati, 2011) y legajos del Juicio a las Juntas Militares (Legajo CONADEP N.º 2538).</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 testimonio">
+        <div class="card h-100">
+            <div class="card-body">
+            <h3 class="h5 card-title">Fernando Álvarez Rojas</h3>
+            <p class="card-text">Trabajador del Instituto Nacional de Tecnología Industrial (INTI).</p>
+            <p class="card-text">"Él tenía una beca para ir a la comisión de energía atómica en Canadá y estuve tratando de convencerlo para que se fueran. Él me decía que no iba a pasar nada, pero pasó [...]. Nos encontramos de un día para otro con las puertas enrejadas y el control militar dentro del instituto."</p>
+            <p class="small mb-0">Archivo de la Memoria y los Derechos Humanos del INTI / Registro del Ministerio de Desarrollo Productivo de la Nación.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>Nunca Más</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>  
+</body>
+</html>
