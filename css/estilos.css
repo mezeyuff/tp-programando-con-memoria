@@ -19,3 +19,10 @@ h1, h2, h3, .navbar-brand { font-family: var(--fuente-titulo); }
 .linea { border-left: 4px solid var(--celeste); padding-left: 1.5rem; }
 .linea li { margin-bottom: 2rem; }
 .fecha { font-family: var(--fuente-archivo); color: var(--celeste-oscuro); }
+.btn-memoria { background-color: var(--celeste-oscuro); color: #fff; border: none; }
+.btn-memoria:hover { background-color: var(--sol); color: var(--texto); }
+.tarjeta { max-width: 420px; margin: auto; padding: 2rem; text-align: center;
+    background: #fff; border: 4px solid var(--celeste); border-top: 12px solid var(--sol); }
+.tarjeta-anios { font-family: var(--fuente-archivo); font-size: 1.2rem; }
+.tarjeta-nombre { font-family: var(--fuente-titulo); }
+.tarjeta-lema { font-weight: 600; margin: 0; }

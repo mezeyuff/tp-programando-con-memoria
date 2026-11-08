@@ -32,6 +32,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#testimonios">Testimonios</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="#tarjeta">Tarjeta</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -135,6 +137,24 @@
             </div>
         </div>
     </div>
+</section>
+<section id="tarjeta" class="container py-5">
+    <h2>Tarjeta conmemorativa</h2>
+    <p>Escribí tu nombre y un mensaje, generá tu tarjeta y compartila.</p>
+    <form id="form-tarjeta" class="row g-3">
+        <div class="col-md-5">
+            <label for="nombre-tarjeta" class="form-label">Tu nombre:</label>
+            <input type="text" id="nombre-tarjeta" class="form-control" maxlength="40">
+        </div>
+        <div class="col-md-7">
+            <label for="mensaje-tarjeta" class="form-label">Tu mensaje:</label>
+            <input type="text" id="mensaje-tarjeta" class="form-control" maxlength="100">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-memoria">Generar tarjeta</button>
+        </div>
+    </form>
+    <div id="resultado-tarjeta" class="mt-4"></div>
 </section>
 </main>
 <footer>Nunca Más</footer>
